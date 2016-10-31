@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Administrator</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+  <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+  <script>
+  //di bawah ini script javascript untuk membuat popover
+$(function()
+{
+	$("a[rel=popover]").popover(
+	{
+		placement : 'right',
+		trigger : 'hover'
+	});
+})
+</script>
+ 
+<script>
+//di bawah ini script javascript untuk membuat tooltip
+	$(function()
+	{
+		$('a').tooltip();
+	});
+</script>
+
+ <style>
+body 
+{
+padding-top:60px;
+padding-bottom: 40px;
+}
+</style>
+</head>
+<body>
+<!--popover--->
+<center><a href="#" class="btn tbn-info" rel="popover" title="Profil Saya" data-content="Saya adalah bla.. bla.. bla.. bla..">Profl</a></br>
+<!--Tooltip-->
+<a href="#" rel="tooltip" title="Ini adalah Tooltip yang tidak biasa">Jangan Di Klik</a></center>
+<!-- fungsi rel di atas adalah untuk memanggil nama fungsi yanga ada di script javascript--->
+</body>
+</html>
